@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import moment from 'moment';
-import { Modal } from "react-native";
+import { Alert, Modal } from "react-native";
 import {
   ModalButton,
   ModalContainer,
@@ -14,6 +14,7 @@ import {
 import { AntDesign } from "@expo/vector-icons";
 import Colors from "../../../constants/Colors";
 import * as Location from 'expo-location';
+import * as Permissions from "expo-permissions";
 
 const InputModal = ({
   modalVisible,
@@ -54,17 +55,24 @@ const InputModal = ({
       setTodoToBeEdited(null);
     }
   };
-  useEffect(() => {
-    (async () => {
-      let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== 'granted') {
-        setErrorMsg('Permission to access location was denied');
-        return;
-      }
-
-      let location = await Location.getCurrentPositionAsync({});
-      setLocation(location);
-    })();
+  useEffect(
+    () => {
+      (async function () {
+        const { status, permissions } = await Permissions.askAsync(
+          Permissions.LOCATION
+        );
+        if (status === "granted") {
+          let location = await Location.getCurrentPositionAsync({
+            enableHighAccuracy: true,
+          });
+          setLocation({
+            latitude: location.coords.latitude,
+            longitude: location.coords.longitude,
+          });
+        } else {
+          throw new Error("Location permission not granted");
+        }
+      })();
   }, []);
 
   return (

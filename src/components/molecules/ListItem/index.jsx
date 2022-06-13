@@ -42,9 +42,9 @@ const ListItems = ({ todos, handleTriggerEdit, setRefresh, refresh }) => {
                   }}
                 >
                   <>
-                    <RowText>{data.item.title}</RowText>
-                    <TodoDate>{data.item.date}</TodoDate>
-                    <TodoDate>Lat: {data.item.location.coords.latitude}, Long: {data.item.location.coords.longitude}</TodoDate>
+                    <RowText>{data?.item?.title}</RowText>
+                    <TodoDate>{data?.item?.date}</TodoDate>
+                    <TodoDate>Lat: {data?.item?.location?.latitude}, Long: {data.item.location?.longitude}</TodoDate>
                   </>
                 </ListView>
               );

@@ -28,7 +28,7 @@ Ao fazer login ou criar a conta os dados do usuário são salvos localmente.
 
 # Link para download android
 
-- [APK](https://expo.dev/artifacts/8d867493-d0fb-403f-9b0f-10871058eb82)
+- [APK](https://expo.dev/artifacts/d85fa8db-3742-48f5-b01c-6372c7851b69)
 
 </br>
 

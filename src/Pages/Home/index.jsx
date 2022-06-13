@@ -1,9 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 
-import moment from 'moment';
-import 'moment-timezone';
-import 'moment/locale/pt-br';
-
 import Header from "../../components/molecules/Header";
 import ListItems from "../../components/molecules/ListItem";
 import InputModal from "../../components/molecules/InputModal";
@@ -11,8 +7,6 @@ import { Container } from "./styles";
 import AuthContext from "../../contexts/auth";
 
 const Home = () => {
-  moment.tz.setDefault('UTC');
-  moment.locale('pt-BR');
 
   const { getTodos, createTodo, updateTodo } = useContext(AuthContext);
   const [todos, setTodos] = useState([]);
