@@ -1,4 +1,4 @@
-<img src="./assets/icon.png" alt="Logo of the project" align="right">
+<img src="./assets/icon.png" width="100" height="100" alt="Logo of the project" align="right">
 
 # Teste RV DIGITAL 
 
@@ -73,5 +73,5 @@ Responsavel por salvar os dados para exibição e edição de novos usuários, c
 </br>
 
 <div align="center">
-<img src="./assets/icon.png" width="400" height="150" alt="Logo of the project" align="center">
+<img src="./assets/icon.png" width="200" height="200" alt="Logo of the project" align="center">
  </div>
