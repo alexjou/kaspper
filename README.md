@@ -64,11 +64,13 @@ $ yarn start
 
 Responsavel por fazer a autenticação de novos usuários, criando um ID único.
 
+<img src="./src/assets/images/firebase1.png" alt="Logo of the project" align="center">
 
 - [Firebase - Firestore](https://firebase.google.com/docs/firestore?hl=pt-br)
 
 Responsavel por salvar os dados para exibição e edição de novos usuários, cadastrando com o mesmo ID criando na autenticação.
 
+<img src="./src/assets/images/firebase1.png" alt="Logo of the project" align="center">
 
 </br>
 
