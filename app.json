@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "kaspper",
+    "slug": "kaspper",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#058dd0"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#058dd0"
+      },
+      "package": "com.alexjoubert.kaspper"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
